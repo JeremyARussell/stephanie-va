@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{be9250d0-d7a5-41f4-907b-5ca19ff1af60}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>Index.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>CondaEnv|CondaEnv|Stephanie VA</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="config.ini" />
+    <Content Include="CONTRIBUTING.md" />
+    <Content Include="install.bat" />
+    <Content Include="LICENSE.md" />
+    <Content Include="open.bat" />
+    <Content Include="README.md" />
+    <Content Include="requirements.txt" />
+    <Content Include="Stephanie\speeches\beep_end.mp3" />
+    <Content Include="Stephanie\speeches\beep_start.mp3" />
+    <Content Include="Stephanie\speeches\speak.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Index.py" />
+    <Compile Include="install.py" />
+    <Compile Include="Stephanie\activity.py" />
+    <Compile Include="Stephanie\AudioManager\audio_getter.py" />
+    <Compile Include="Stephanie\AudioManager\audio_manager.py" />
+    <Compile Include="Stephanie\AudioManager\audio_recognizer.py" />
+    <Compile Include="Stephanie\AudioManager\__init__.py" />
+    <Compile Include="Stephanie\boot.py" />
+    <Compile Include="Stephanie\commander.py" />
+    <Compile Include="Stephanie\configurer.py" />
+    <Compile Include="Stephanie\EventDispatcher\event_dispatcher.py" />
+    <Compile Include="Stephanie\EventDispatcher\__init__.py" />
+    <Compile Include="Stephanie\local_libs\activity_search.py" />
+    <Compile Include="Stephanie\local_libs\football_manager.py" />
+    <Compile Include="Stephanie\local_libs\numbers_format.py" />
+    <Compile Include="Stephanie\local_libs\pymato.py" />
+    <Compile Include="Stephanie\local_libs\pyzomato\base.py" />
+    <Compile Include="Stephanie\local_libs\pyzomato\core\endpoint_manager.py" />
+    <Compile Include="Stephanie\local_libs\pyzomato\core\requester.py" />
+    <Compile Include="Stephanie\local_libs\pyzomato\core\__init__.py" />
+    <Compile Include="Stephanie\local_libs\pyzomato\zomato.py" />
+    <Compile Include="Stephanie\local_libs\pyzomato\__init__.py" />
+    <Compile Include="Stephanie\local_libs\reporter.py" />
+    <Compile Include="Stephanie\local_libs\search_module.py" />
+    <Compile Include="Stephanie\local_libs\wolframalpha_speech\exceptions_manager.py" />
+    <Compile Include="Stephanie\local_libs\wolframalpha_speech\index.py" />
+    <Compile Include="Stephanie\local_libs\wolframalpha_speech\__init__.py" />
+    <Compile Include="Stephanie\local_libs\__init__.py" />
+    <Compile Include="Stephanie\Modules\alpha_search_module.py" />
+    <Compile Include="Stephanie\Modules\base_module.py" />
+    <Compile Include="Stephanie\Modules\evernote_module.py" />
+    <Compile Include="Stephanie\Modules\facebook_module.py" />
+    <Compile Include="Stephanie\Modules\football_module.py" />
+    <Compile Include="Stephanie\Modules\gmail_module.py" />
+    <Compile Include="Stephanie\Modules\google_calendar_module.py" />
+    <Compile Include="Stephanie\Modules\movie_information_module.py" />
+    <Compile Include="Stephanie\Modules\reporter_module.py" />
+    <Compile Include="Stephanie\Modules\system_module.py" />
+    <Compile Include="Stephanie\Modules\twitter_module.py" />
+    <Compile Include="Stephanie\Modules\weather_report_module.py" />
+    <Compile Include="Stephanie\Modules\wikipedia_module.py" />
+    <Compile Include="Stephanie\Modules\zomato_module.py" />
+    <Compile Include="Stephanie\Modules\__init__.py" />
+    <Compile Include="Stephanie\TextManager\speaker.py" />
+    <Compile Include="Stephanie\TextManager\text_manager.py" />
+    <Compile Include="Stephanie\TextManager\text_recognizer.py" />
+    <Compile Include="Stephanie\TextManager\__init__.py" />
+    <Compile Include="Stephanie\TextProcessor\audio_text_manager.py" />
+    <Compile Include="Stephanie\TextProcessor\module_router.py" />
+    <Compile Include="Stephanie\TextProcessor\text_learner.py" />
+    <Compile Include="Stephanie\TextProcessor\text_processor.py" />
+    <Compile Include="Stephanie\TextProcessor\text_sorter.py" />
+    <Compile Include="Stephanie\TextProcessor\__init__.py" />
+    <Compile Include="Stephanie\updater.py" />
+    <Compile Include="Stephanie\virtual_assistant.py" />
+    <Compile Include="Stephanie\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Stephanie" />
+    <Folder Include="Stephanie\AudioManager" />
+    <Folder Include="Stephanie\EventDispatcher" />
+    <Folder Include="Stephanie\local_libs" />
+    <Folder Include="Stephanie\local_libs\pyzomato" />
+    <Folder Include="Stephanie\local_libs\pyzomato\core" />
+    <Folder Include="Stephanie\local_libs\wolframalpha_speech" />
+    <Folder Include="Stephanie\Modules" />
+    <Folder Include="Stephanie\speeches" />
+    <Folder Include="Stephanie\TextManager" />
+    <Folder Include="Stephanie\TextProcessor" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|Stephanie VA" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
