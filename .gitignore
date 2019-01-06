@@ -99,3 +99,6 @@ ENV/
 .idea
 
 .gitignore
+
+# Don't commit the settings file unique to each user
+config.ini
